@@ -1,7 +1,8 @@
 {
   "headers": {
     "/*": {
-      "X-Author": "steamn"
+      "X-Author": "steamn",
+      "Access-Control-Allow-Origin": "*"
     }
   }
 }
