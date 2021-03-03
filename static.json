@@ -3,6 +3,11 @@
     "/*": {
       "X-Author": "steamn",
       "Access-Control-Allow-Origin": "*"
+    },
+    "/login/*": {
+       "X-Author": "steamn",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "text/html; charset=UTF-8"
     }
   }
 }
