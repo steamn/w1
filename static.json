@@ -4,12 +4,12 @@
       "X-Author": "steamn",
       "Access-Control-Allow-Origin": "*"
     },
-    "/login/*": {
+    "/login/": {
       "X-Author": "steamn",
       "Access-Control-Allow-Origin": "*",
       "Content-Type": "text/plain; charset=UTF-8"
     },
-     "/sample/*": {
+     "/sample/": {
       "Content-Type": "text/plain; charset=UTF-8"
     }
   }
