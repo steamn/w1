@@ -3,7 +3,14 @@
   <head>
     <title>Страница HTML5</title>
     <meta charset="utf-8" />
-   <script>
+ 
+   
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <button id="bt">button</button>
+    
+      <script>
   const el = document.getElementById("bt");
 
 el.addEventListener("click", get_data);
@@ -17,10 +24,5 @@ function get_data() {
     .then((result) => (input_val.value = result));
 }
 </script>
-   
-  </head>
-  <body>
-    <input type="text" id="inp" />
-    <button id="bt">button</button>
   </body>
 </html>
