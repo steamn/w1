@@ -11,14 +11,14 @@
     <button id="bt">button</button>
     
       <script>
-  const el = document.getElementById("bt");
+  let el = document.getElementById("bt");
 
 el.addEventListener("click", get_data);
 
-const input_val = document.getElementById("inp");
+let input_val = document.getElementById("inp");
 
 function get_data() {
-  const url = input_val;
+  const url = input_val.value;
   fetch(url)
     .then((response) => response.text())
     .then((result) => (input_val.value = result));
