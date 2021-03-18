@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Страница HTML5</title><meta charset="utf-8">
- </head>
- <body>
- 
+  <head>
+    <title>Страница HTML5</title>
+    <meta charset="utf-8" />
+   <script>
+  const el = document.getElementById("bt");
+
+el.addEventListener("click", get_data);
+
+const input_val = document.getElementById("inp");
+
+function get_data() {
+  const url = input_val;
+  fetch(url)
+    .then((response) => response.text())
+    .then((result) => (input_val.value = result));
+}
+</script>
    
-<input type="text" id="inp">
-
-<button id="bt">button</button>
- </body>
+  </head>
+  <body>
+    <input type="text" id="inp" />
+    <button id="bt">button</button>
+  </body>
 </html>
-
